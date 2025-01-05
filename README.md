@@ -58,11 +58,11 @@ pip install -r requirements.txt
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/HesamNajafi-14/heart-attack-prediction-svm.git
+   git clone https://github.com/HesamNajafi-14/HeartHealth_SVM.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd heart-attack-prediction-svm
+   cd HeartHealth_SVM
    ```
 3. Open the Jupyter Notebook or run the Python script:
    ```bash
