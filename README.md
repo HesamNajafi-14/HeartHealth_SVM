@@ -44,7 +44,8 @@ The following Python libraries were used in this project:
 - `pandas`
 - `numpy`
 - `matplotlib`
-- `seaborn`
+- `pylab`
+- `scipy`
 - `scikit-learn`
 
 To install the required libraries, run:
@@ -57,7 +58,7 @@ pip install -r requirements.txt
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/heart-attack-prediction-svm.git
+   git clone https://github.com/HesamNajafi-14/heart-attack-prediction-svm.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -69,23 +70,38 @@ pip install -r requirements.txt
    ```
    or
    ```bash
-   python main.py
+   python project_name.py
    ```
 
 ## Results
 
-The SVM model achieved high accuracy in classifying heart attack risk. Key insights and visualizations are included in the notebook to highlight the relationships between features and the target variable.
+### Classification Report:
+
+```
+             precision    recall  f1-score   support
+
+           0       0.91      0.84      0.88        25
+           1       0.89      0.94      0.92        36
+
+    accuracy                           0.90        61
+   macro avg       0.90      0.89      0.90        61
+weighted avg       0.90      0.90      0.90        61
+```
+
+### Confusion Matrix (without normalization):
+
+```
+[[21  4]
+ [ 2 34]]
+```
+
+The SVM model achieved an accuracy of 90%, with strong precision, recall, and F1-scores for both classes. Key insights and visualizations are included in the notebook to highlight the relationships between features and the target variable.
 
 ## Contributions
 
 Feel free to contribute to this project by submitting issues or pull requests.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 This project is inspired by the need to apply machine learning to healthcare to support early diagnosis and prevention of life-threatening conditions.
-
 
